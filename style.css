@@ -1,0 +1,179 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #173b68;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+}
+
+/* Navigation */
+nav {
+    background-color: #24558a;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+/* Main Content */
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+section, aside {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #173b68;
+    margin-bottom: 15px;
+}
+
+article {
+    background-color: #edf4fc;
+    padding: 18px;
+    margin: 15px 0;
+    border-left: 5px solid #24558a;
+    border-radius: 5px;
+}
+
+article h3 {
+    color: #24558a;
+    margin-bottom: 8px;
+}
+
+/* Registration Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin-right: 8px;
+}
+
+fieldset {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 5px;
+}
+
+fieldset label {
+    display: inline-block;
+    margin: 8px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 3px solid #78aef0;
+    border-color: #173b68;
+}
+
+button {
+    background-color: #173b68;
+    color: white;
+    border: none;
+    padding: 13px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #24558a;
+}
+
+button:focus-visible {
+    outline: 3px solid #78aef0;
+    outline-offset: 3px;
+}
+
+#response {
+    color: green;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #173b68;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+}

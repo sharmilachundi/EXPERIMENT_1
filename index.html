@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="University Student Activity Management Portal">
+    <meta name="author" content="University">
+    <title>Student Activity Management Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>University Activity Portal</h1>
+        <p>Explore. Participate. Achieve.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav aria-label="Main navigation">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#events">Upcoming Events</a></li>
+            <li><a href="#activities">Activities</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome Students!</h2>
+            <p>
+                Welcome to the University Student Activity Management Portal.
+                Discover events, participate in activities and showcase your talents.
+            </p>
+        </section>
+
+        <!-- Events Section -->
+        <section id="events">
+            <h2>Upcoming Events</h2>
+
+            <article>
+                <h3>Technical Fest</h3>
+                <p>Date: 10 December 2026</p>
+                <p>Participate in coding competitions and technical workshops.</p>
+            </article>
+
+            <article>
+                <h3>Cultural Fest</h3>
+                <p>Date: 15 December 2026</p>
+                <p>Enjoy music, dance, drama and cultural performances.</p>
+            </article>
+
+            <article>
+                <h3>Sports Meet</h3>
+                <p>Date: 20 December 2026</p>
+                <p>Show your sports skills through various competitions.</p>
+            </article>
+        </section>
+
+        <!-- Activities Section -->
+        <section id="activities">
+            <h2>University Activities</h2>
+
+            <article>
+                <h3>Technical Activities</h3>
+                <p>Hackathons, coding contests and project exhibitions.</p>
+            </article>
+
+            <article>
+                <h3>Creative Activities</h3>
+                <p>Drawing, photography, music and dance competitions.</p>
+            </article>
+
+            <article>
+                <h3>Social Activities</h3>
+                <p>Community service, awareness campaigns and volunteering.</p>
+            </article>
+        </section>
+
+        <!-- Aside -->
+        <aside>
+            <h2>Important Information</h2>
+            <p>Students must register before the event registration deadline.</p>
+            <p>Bring your college ID card during the events.</p>
+        </aside>
+
+        <!-- Registration Form -->
+        <section id="register">
+            <h2>Student Registration Form</h2>
+
+            <form id="registrationForm">
+
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Enter your full name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email"
+                       placeholder="Enter your email" required>
+
+                <label for="roll">Student ID:</label>
+                <input type="text" id="roll" name="roll"
+                       placeholder="Enter your student ID" required>
+
+                <label for="department">Department:</label>
+                <select id="department" name="department" required>
+                    <option value="">Select Department</option>
+                    <option value="CSE">Computer Science</option>
+                    <option value="ECE">Electronics</option>
+                    <option value="EEE">Electrical</option>
+                    <option value="MECH">Mechanical</option>
+                    <option value="CIVIL">Civil</option>
+                </select>
+
+                <fieldset>
+                    <legend>Gender:</legend>
+
+                    <label>
+                        <input type="radio" name="gender" value="Male" required>
+                        Male
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="Female">
+                        Female
+                    </label>
+
+                    <label>
+                        <input type="radio" name="gender" value="Other">
+                        Other
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Select Your Activities:</legend>
+
+                    <label>
+                        <input type="checkbox" name="activity" value="Technical">
+                        Technical Events
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="activity" value="Cultural">
+                        Cultural Events
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="activity" value="Sports">
+                        Sports
+                    </label>
+
+                    <label>
+                        <input type="checkbox" name="activity" value="Social">
+                        Social Activities
+                    </label>
+                </fieldset>
+
+                <label for="message">Why do you want to participate?</label>
+                <textarea id="message" name="message"
+                          rows="4"
+                          placeholder="Enter your message"></textarea>
+
+                <button type="submit">Register Now</button>
+
+                <p id="response" role="status" aria-live="polite"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 University Activity Portal. All Rights Reserved.</p>
+        <p>Contact: activities@university.edu</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
